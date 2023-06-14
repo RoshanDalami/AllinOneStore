@@ -4,6 +4,7 @@ import CartContext from "../Store/Cart-context";
 
 const Card = (props) => {
   const [amountIsValid, setAmountIsValid] = useState(true);
+  const [itemAdded,setItemAdded] = useState(false);
   const cartCtx = useContext(CartContext);
   const price = `$${props.price.toFixed(2)}`;
 
@@ -23,11 +24,16 @@ const Card = (props) => {
       setAmountIsValid(false);
       return;
     }
+    setItemAdded(true)
+    setTimeout(()=>{
+      setItemAdded(false)
+    },1000)
     addToCartHandler(enteredAmount);
   };
 
   return (
     <>
+    
       <div className={classes.container}>
         <img className={classes.image} src={props.image} />
         <div className={classes.overlay}>

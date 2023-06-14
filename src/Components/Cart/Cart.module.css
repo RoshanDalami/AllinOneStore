@@ -1,0 +1,34 @@
+.container{
+    width: 100%;
+}
+
+.wrapper{
+    width: 60%;
+    margin: 50px auto;
+    border: 1px solid red;
+    border-radius: 30px;
+    padding: 50px;
+    
+}
+.btnWrapper{
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+.btn{
+    margin: 5px 20px;
+    padding: 5px 20px;
+    background:none;
+    outline-style: none;
+    border: 1px solid red;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.order:hover{
+    background-color: red;
+
+}

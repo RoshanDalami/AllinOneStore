@@ -23,12 +23,15 @@
     justify-content: space-between;
     align-items: center;
 }
-.loginbtn{
+.cart{
 margin-right: 100px;
 text-align: center;
+text-decoration: none;
 }
 .btn{
     background: none;
+    text-decoration: none;
+    display: flex;
     border: none;
     color: white;
     padding: 10px 30px;
@@ -36,6 +39,7 @@ text-align: center;
     font-weight: 700;
     background-color: rgba(206, 10, 53, 0.991);
     /* border: 1px solid black; */
+    
     border-radius: 30px;
     cursor: pointer;
 }
@@ -56,3 +60,8 @@ text-align: center;
     
     
 }
+.icon {
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-right: 0.5rem;
+  }

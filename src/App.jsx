@@ -6,6 +6,7 @@ import Cart from "./Components/Cart/Cart";
 import RootLayout from "./Pages/RootLayout";
 import './App.css';
 import CartProvider from "./Store/CartProvider";
+import OrderConfirm from "./Pages/OrderConfirm";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart/> ,
+      },
+      {
+        path: "/orderplaced",
+        element: <OrderConfirm/> ,
       },
     ],
   },

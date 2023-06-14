@@ -32,7 +32,7 @@ const cartReducer = (state,action)=>{
       updatedItems = state.items.concat(action.item);
 
     }
-    console.log(updatedItems)
+    
     return {
       items : updatedItems,
       totalAmount:updatedTotalAmount
@@ -55,6 +55,13 @@ const cartReducer = (state,action)=>{
         totalAmount:updatedTotalAmount
       }
   }
+  if(action.type === 'ORDER'){
+    return{
+      items:[],
+      totalAmount : 0,
+      
+    }
+  }
 
   return defaultCartState;
 }
@@ -70,7 +77,9 @@ const addItemToCartHandler = (item)=>{
 const removeItemFromCartHandler = (id)=>{
   dispatchCartAction({type:'REMOVE',id:id})
 }
-
+const onOrderHandler = () =>{
+  dispatchCartAction({type:'ORDER'})
+}
 
 
 const cartContext = {
@@ -78,6 +87,7 @@ const cartContext = {
   totalAmount : curState.totalAmount,
   addItem : addItemToCartHandler ,
   removeItem : removeItemFromCartHandler ,
+  order : onOrderHandler,
 }
 
   return (
