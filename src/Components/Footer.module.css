@@ -1,0 +1,13 @@
+.container{
+    height: 6vh;
+    width: 100%;
+    margin-top: 8%;
+    background-color: rgb(231, 63, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.697);
+}
