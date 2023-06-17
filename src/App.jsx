@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/login",
-        element: <Login/>,s
+        element: <Login/>,
       },
       {
         path: "/orderplaced",
