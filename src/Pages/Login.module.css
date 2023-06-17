@@ -1,0 +1,37 @@
+.container {
+  /* border: 1px solid red; */
+  height: 68vh;
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  /* border: 1px solid red; */
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  /* border: 1px solid red; */
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+.label {
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.input {
+  width: 60%;
+  height: 5vh;
+  padding: 15px;
+}
+.input:focus {
+  outline: none;
+}

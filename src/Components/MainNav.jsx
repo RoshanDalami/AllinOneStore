@@ -9,6 +9,8 @@ import CartIcon from "./Cart/CartIcon";
 
 
 const MainNav = () => {
+
+ 
   const cartCtx = useContext(CartContext);
   const {items} = cartCtx;
   const numberOfCartItems = items.reduce((curNumber,item)=>{
@@ -25,6 +27,8 @@ const MainNav = () => {
 
             <NavLink className={classes.item} to={'/products'}>Products</NavLink>
           </nav>
+
+
           <div >
             <NavLink to={'/cart'} className={classes.btn}>
               <div className={classes.icon}>
@@ -34,7 +38,7 @@ const MainNav = () => {
               <span style={{backgroundColor:'white',borderRadius:'50%',color:'black',paddingLeft:5, paddingRight:5,marginLeft:5 }}>{numberOfCartItems}</span>  
            
             </NavLink>
-          </div>
+          </div> 
         </div>
       </div>
     </>

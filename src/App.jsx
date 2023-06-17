@@ -7,6 +7,7 @@ import RootLayout from "./Pages/RootLayout";
 import './App.css';
 import CartProvider from "./Store/CartProvider";
 import OrderConfirm from "./Pages/OrderConfirm";
+import Login from "./Pages/Login";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart/> ,
+      },
+      {
+        path: "/login",
+        element: <Login/>,s
       },
       {
         path: "/orderplaced",
